@@ -1,0 +1,17 @@
+#include <stdio.h>
+//Calcular e mostrar a média aritmética dos números pares compreendidos entre 13 e 73.
+int main(void) {
+  int i, soma =0, contagem, media;
+  printf("media aritmética entre os numeros pares de 13-73\n");
+  for(i=13; i<=73; i++){
+    if(i%2==0){
+      soma += i;
+      
+    }
+  }
+  
+  printf("a soma eh: %d \n", soma);
+  media = (soma/60);
+  printf("a media eh: %d\n", media);
+  return 0;
+}

@@ -1,0 +1,13 @@
+#include <stdio.h>
+//numeros multiplos de 7 abaixo de 200
+int main(void) {
+  int i;
+  for (i=0; i<200; i++){
+
+    if (i%7==0){
+      printf("os numeros multiplos de sete sao %d.\n", i);
+      //printf("%d", i);
+    }
+  }
+  return 0;
+}

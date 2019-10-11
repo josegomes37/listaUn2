@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(){
+	int i, tam, cont=0, cak;
+	char nome[100],caractere ='j';
+	
+	printf("escreva um texto: ");
+	fgets(nome, 100, stdin);
+	
+	tam = strlen(nome)-1;
+	for(i=0;i<=tam;i++){
+    
+		if(nome[i] == 'j'){
+			cont++;
+	}
+	}
+	
+	printf(" quantidade de letras ''%c'' eh: %d", caractere, cont);
+		
+	return 0;
+}

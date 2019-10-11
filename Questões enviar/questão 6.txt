@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void) {
+  int i, L, j, quad =1;
+  printf("digite um numero: ");
+  scanf("%d", &L);
+do {
+  i = quad * quad;
+  quad++;
+ 
+} while (i<L);
+printf(" o x elevado ao quadrado eh %d\n", i); 
+
+  
+  return 0;
+}

@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int converter(float x){
+	float f = (x*(9/5)+32);
+	return f;
+}
+
+int main(){
+	float tempf, tc;
+	
+	printf("digite uma temperatura em Celsius: ");
+	scanf("%f", &tc);
+	
+	tempf = converter(tc);
+	printf("%.4f graus em celsius eh %.4f graus em fahrenheit", tc, tempf);
+	return 0;
+}

@@ -1,0 +1,14 @@
+#include <stdio.h>
+//Imprimir a tabuada do número 4.
+int main(void) {
+  int i, n, z;
+  printf("insira um numero: ");
+  scanf("%d", &n);
+  for(i=0; i<=10; i++){
+z = i*n;
+printf("%dx%d eh:%d\n", n, i, z);
+     
+  }
+  
+  return 0;
+}

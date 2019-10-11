@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <string.h>
+
+
+
+int main (){
+char word[100];
+int i, palavra=0, letra=0, zero=0;
+
+printf("digite a palavras\n");
+fgets(word, 100, stdin);
+
+for(i=0;word[i]!='\0';i++){
+	if(word[i]!=zero && word[i]!=' '){
+		letra++;
+	}else{
+        palavra++;
+        }
+    }
+    printf("existe %d palavras e %d letras.\n", palavra+1, letra-1);
+}

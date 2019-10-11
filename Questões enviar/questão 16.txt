@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+int main(){
+int i, tam;
+char name[1000];
+	
+	printf("escreva uma frase: ");
+	fgets(name, 1000, stdin);
+	tam = strlen(name)-1;
+	
+	for(i = tam; i>=0; i--){
+	printf("%c", name[i]);
+	}
+
+	return 0;
+}

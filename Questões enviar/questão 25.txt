@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+void main(){
+	int i, k, j, cont=0; 
+	char frase[40], copy[40], ver[40];
+
+	printf("digite: ");
+	fgets(frase, 40, stdin);
+	int tamanho = strlen(frase)-1;
+
+	for(i=0; i<tamanho; i++){
+		if(frase[i]>=65 && frase[i]<=90){
+			copy[j] = frase[i]+32;
+			j++;
+		}else if(frase[i]>=97 && frase[i]<=122){
+			copy[j] = frase[i];
+			j++;
+	}
+	}	
+
+	
+	for(i=97; i<=122; i++){
+		for(j=0; j<strlen(copy); j++){
+			if(i==copy[j]){
+				cont++;
+				ver[0]=i;
+		}
+		}
+		if(cont!=0){
+			printf("%c  ->  %d.\n", ver[0], cont);
+			cont=0;
+	}
+	}
+}

@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void) {
+  int i, soma=0;
+
+  printf("Somar todos os números naturais\n");
+
+  for (i=0; i<=100; i++){
+   soma +=i;
+
+
+  }
+  printf("%d", soma);
+  return 0;
+}

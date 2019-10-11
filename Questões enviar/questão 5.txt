@@ -1,0 +1,12 @@
+#include <stdio.h>//calcular o fatorial de um numero qualquer
+int main(void) {
+  int n, i, fatorial=1;
+  printf("digite um numero: ");
+  scanf("%d", &n);
+for(i=n; i>1; i--){
+  fatorial *=i;
+
+}
+printf("o fatorial de %d eh: %d", n, fatorial);
+  return 0;
+}

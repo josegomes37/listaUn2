@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(){
+	int i, qtdn, soma=0;
+	
+	printf("digite a quantidade de numeros que voce quer ver: ");
+	scanf("%d", &qtdn);
+	
+	int numero[qtdn];
+	numero[0] = 0;
+	numero[1] = 1;
+	
+	for(i=2;i<qtdn;i++){
+	numero[i] = numero[i-2]+numero[i-1];
+	soma+=numero[i];
+	}
+	
+	for(i=0;i<qtdn;i++){
+	printf("%d, ", numero[i]);
+	}
+	printf("\nsoma = %d", soma);
+	return 0;
+}

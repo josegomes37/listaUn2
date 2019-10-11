@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+	int i, n, cont=0;
+	
+	printf("digite um numero: ");
+	scanf("%d", &n);
+	
+	for(i=n-1;i>1;i--){
+	if(n%i==0){
+	cont++;
+	}
+	}
+	
+	if(cont==0){
+	printf("o numero %d eh primo", n);
+	}else{
+	printf("o numero %d nao eh primo", n);
+
+	}
+		
+	return 0;
+}

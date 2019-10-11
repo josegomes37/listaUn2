@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+//Prepare uma função que receba um literal em um array e o rearrange de trás para frente. Ex:
+
+int contrario(char *frase){
+    int i;
+    char copy[40];
+    int tam = strlen(frase)-1;
+    int j = tam - 1;
+    for(i=0; i<=tam; i++){
+            copy[i] = frase[j];
+            j--;
+    }
+    for(i=0; i<=tam; i++){
+        frase[i] = copy[i];
+    }
+    return 0;
+}
+int main(){
+    char frase[40];
+    printf("digite uma frase: ");
+    fgets(frase, 40, stdin);
+
+    puts(frase);
+    contrario(frase);
+    puts(frase);
+}

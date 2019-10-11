@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+
+
+int main() {
+	int i,j, n, cont=0, contn=0, numberseis, numberdoze;
+	
+	for(i=2;i<100;i++){
+		for(j=i;j>1;j--){
+			if(i%j==0){
+				cont++;
+			}
+		}
+		if(cont==1){
+			contn++;
+				if(contn == 6){
+					numberseis=i;			
+				}
+				if(contn == 12){
+					numberdoze=i;
+				}
+		}
+		cont = 0;
+		
+		
+		
+	}
+	
+	printf("a diferença entre o 6ª e 12ª numeros primos eh: %d", (numberdoze-numberseis));
+		
+	return 0;
+}
